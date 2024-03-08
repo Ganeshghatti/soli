@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+@font-face {
+  font-family: light_pixel_7;
+  src: url(../public/font/light_pixel_7/light_pixel-7.ttf);
+}
+
+#navbar {
+  .navbar-logo {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.98px;
+  }
+  .navbar-pc-menu li {
+    color: #000;
+    font-family: "Syne", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .navbar-phone-sidemenu {
+    width: 100vw;
+    padding: 10vh 0;
+    background-image: url("../public/assets/navbarmenubg.png");
+    background-size: cover;
+  }
+  .navbar-phone-sidemenu li {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+}
+#hero {
+  background-image: url("./assets/Herobg.png");
+  width: 100vw;
+  height: 100vh;
+  .hero-left-heading {
+    color: #000;
+    -webkit-text-stroke-color: #fff;
+    // -webkit-text-stroke-width: 21px;
+    font-family: light_pixel_7;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 22px;
+    @media (max-width: 867px) {
+      font-size: 100px;
+      letter-spacing: 11px;
+    }
+  }
+  .hero-left-subheading-div {
+    background-color: #000;
+    border-radius: 30px;
+    @media (max-width: 867px) {
+      border-radius: 10px;
+    }
+  }
+  .hero-left-subheading-text {
+    color: #fff;
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      font-size: 30px;
+      letter-spacing: 1.2px;
+    }
+  }
+  .hero-left-description {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 18px;
+    }
+  }
+  .hero-img {
+    @media (max-width: 867px) and (min-width: 468px) {
+      max-height: 40%;
+    }
+    @media (max-width: 468px) {
+      max-height: 50%;
+    }
+  }
+  .hero-star1 {
+    position: absolute;
+    top: 22%;
+    left: 68%;
+    @media (max-width: 867px) {
+      width: 20%;
+      top: 30%;
+    }
+  }
+  .hero-star2 {
+    position: absolute;
+    right: 0;
+    top: 33%;
+    @media (max-width: 867px) {
+      top: 45%;
+    }
+  }
+  .hero-star3 {
+    position: absolute;
+    left: 38%;
+    bottom: 3%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+}

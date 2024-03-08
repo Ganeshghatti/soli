@@ -1,0 +1,18 @@
+import React, { useEffect, useState } from "react";
+import Home from "./Pages/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageNotFound from "./Components/PageNotFound";
+import Navbar from "./Pages/Navbar";
+import Footer from "./Pages/Footer";
+import "./App.scss";
+import Hero from "./Pages/Hero";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Hero />
+      <Footer />
+    </BrowserRouter>
+  );
+}
