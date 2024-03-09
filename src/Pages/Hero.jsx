@@ -7,17 +7,22 @@ export default function Hero() {
       className="h-screen w-screen flex justify-center items-center md:flex-col md:justify-end"
     >
       <img
-        src="./assets/Designs/star1.png"
+        src="./assets/Designs/herostar1.png"
         className="hero-star1 w-fit"
         alt=""
       />
       <img
-        src="./assets/Designs/star2.png"
+        src="./assets/Designs/herostar2.png"
         className="hero-star2 w-fit"
         alt=""
       />
       <img
-        src="./assets/Designs/star3.png"
+        src="./assets/Designs/herophonestar2.png"
+        className="hero-phone-star2 w-fit"
+        alt=""
+      />
+      <img
+        src="./assets/Designs/herostar3.png"
         className="hero-star3 w-fit"
         alt=""
       />
@@ -26,9 +31,9 @@ export default function Hero() {
         <div className="hero-left-subheading-div w-fit px-8 md:py-2 flex items-center justify-center">
           <p className="hero-left-subheading-text">$SOLI</p>
         </div>
-        <p className="hero-left-description w-3/5">
-          Solana’s Frog. Just as ETH has
-          PEPE, SOL has RIBBIT.
+        <p className="hero-left-description w-3/4">
+          Get ready to ride the wave of fun, pleasure, and profits with SOLI,
+          the latest memecoin sensation on Solana!{" "}
         </p>
         <img
           src="./assets/Herobutton.png"

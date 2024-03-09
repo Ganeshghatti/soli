@@ -100,8 +100,8 @@
   }
   .hero-star1 {
     position: absolute;
-    top: 22%;
-    left: 68%;
+    top: 16%;
+    left: 60%;
     @media (max-width: 867px) {
       width: 20%;
       top: 30%;
@@ -109,18 +109,226 @@
   }
   .hero-star2 {
     position: absolute;
-    right: 0;
-    top: 33%;
+    left: 0;
+    top: 20%;
     @media (max-width: 867px) {
-      top: 45%;
+      display: none;
     }
   }
   .hero-star3 {
     position: absolute;
-    left: 38%;
-    bottom: 3%;
+    right: 0;
+    top: 30%;
     @media (max-width: 867px) {
       display: none;
+    }
+  }
+  .hero-phone-star2 {
+    display: none;
+    @media (max-width: 867px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 60%;
+    }
+  }
+}
+
+#Tokenomics {
+  background-image: url("../public/assets/tokenomicsbg.png");
+  background-size: cover;
+  padding: 9vh 0;
+  .tokenomics-title {
+    color: #000;
+    -webkit-text-stroke-width: 9;
+    -webkit-text-stroke-color: #fff;
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      -webkit-text-stroke-width: 5;
+      font-size: 40px;
+      letter-spacing: 1.6px;
+    }
+  }
+  .tokenomics-description {
+    color: #d0d0d0;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .tokenomics-card1 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card3 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card4 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card-text {
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 2;
+    -webkit-text-stroke-color: #fff;
+    font-family: light_pixel_7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.8px;
+    position: absolute;
+    @media (max-width: 867px) {
+      font-size: 15px;
+      letter-spacing: 0.64px;
+    }
+  }
+  .tokenomics-contact-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.85);
+  }
+  .tokenomics-contact-title {
+    color: #000;
+    -webkit-text-stroke-width: 2;
+    -webkit-text-stroke-color: #fff;
+    font-family: light_pixel_7;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    @media (max-width: 867px) {
+      text-align: center;
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+    }
+  }
+  .tokenomics-contact-id {
+    color: #fff;
+    font-family: light_pixel_7;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    @media (max-width: 867px) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.16px;
+    }
+  }
+  .tokenomics-star1 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomics-star2 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomics-star3 {
+    position: absolute;
+    top: 65%;
+    right: 2%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomicsphonestar {
+    display: none;
+    @media (max-width: 867px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+#HowToBuy {
+  background-image: url("../public/assets/howtobuybg.png");
+  background-size: cover;
+  padding: 5vh 0;
+  .HowToBuy-title {
+    color: #000;
+    -webkit-text-stroke-width: 9;
+    -webkit-text-stroke-color: #fff;
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      -webkit-text-stroke-width: 5;
+      font-size: 40px;
+      letter-spacing: 1.6px;
+    }
+  }
+  .howtobuytext {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 28%;
+    @media (max-width: 867px) {
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+  .howtobuy-star {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .howtobuy-starphone {
+    display: none;
+    @media (max-width: 867px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 35%;
     }
   }
 }
