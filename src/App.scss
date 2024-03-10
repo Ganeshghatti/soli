@@ -44,6 +44,10 @@
   background-image: url("../public/assets/Herobg.png");
   width: 100vw;
   height: 100vh;
+  @media (max-width: 867px) {
+    height: auto;
+    padding-top: 12vh;
+  }
   .hero-left-heading {
     color: #000;
     -webkit-text-stroke-color: #fff;
@@ -330,5 +334,87 @@
       right: 0;
       bottom: 35%;
     }
+  }
+}
+#Roadmap {
+  background-image: url("../public/assets/Roadmapbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .roadmap-title {
+    color: #000;
+    -webkit-text-stroke-width: 9;
+    -webkit-text-stroke-color: #fff;
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      font-size: 40px;
+      letter-spacing: 1.6px;
+    }
+  }
+  .roadmap-description {
+    color: #d9d9d9;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .roadmap-card {
+    width: 30%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 867px) {
+      width: 100%;
+    }
+  }
+  .roadmap-card-title {
+    color: #fafafa;
+    text-align: center;
+    font-family: light_pixel_7;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    @media (max-width: 867px) {
+      font-size: 28px;
+    }
+  }
+  .roadmap-card-description {
+    color: #d5d5d5;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .roadmap-star1 {
+    position: absolute;
+    right: 1%;
+    top: 4%;
+  }
+  .roadmap-star2 {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+  }
+  .roadmap-star3 {
+    position: absolute;
+    left: 0%;
+    top: 65%;
   }
 }

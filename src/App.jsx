@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Home from "./Pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageNotFound from "./Components/PageNotFound";
 import Navbar from "./Pages/Navbar";
@@ -8,6 +7,7 @@ import "./App.scss";
 import Hero from "./Pages/Hero";
 import Tokenomics from "./Pages/Tokenomics";
 import HowToBuy from "./Pages/HowToBuy";
+import Roadmap from "./Pages/Roadmap";
 
 export default function App() {
   return (
@@ -16,6 +16,7 @@ export default function App() {
       <Hero />
       <Tokenomics />
       <HowToBuy />
+      <Roadmap/>
       <Footer />
     </BrowserRouter>
   );

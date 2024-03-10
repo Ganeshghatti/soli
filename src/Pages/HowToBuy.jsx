@@ -9,7 +9,7 @@ export default function HowToBuy() {
           <img src="./assets/HowToBuyArt.png" className="md:hidden" alt="" />
           <img
             src="./assets/HowToBuyArtphone.png"
-            className="hidden md:block object-cover w-1/4"
+            className="hidden md:block object-cover custom-width-30"
             alt=""
           />
           <div className="flex justify-evenly md:pb-12 md:flex-col md:w-2/3 custom-width-88 self-end md:self-auto">

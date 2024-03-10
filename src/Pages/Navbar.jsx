@@ -55,7 +55,7 @@ export default function Navbar() {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              className={`z-50 absolute cursor-pointer  top-5 text-white right-5 ${
+              className={`z-50 absolute cursor-pointer  top-8 text-white right-7 ${
                 menu ? "block" : "hidden"
               }`}
               onClick={menuf}
