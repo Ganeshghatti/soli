@@ -79,11 +79,15 @@ export default function Hero() {
             }}
           />
         </a>
-        <a href="https://www.google.com/">
+        <a href="https://www.google.com/" onClick={handleClick}>
           <img
             src="./assets/Herobuttonphone.png"
             className="w-fit cursor-pointer hidden md:block"
             alt="buy now"
+            style={{
+              marginTop: `${buttonPosition.top}px`,
+              marginLeft: `${buttonPosition.left}px`,
+            }}
           />
         </a>
       </div>
