@@ -77,9 +77,10 @@
     @media (max-width: 867px) {
       font-size: 100px;
       letter-spacing: 11px;
+      @include stroke(10, #fff);
     }
   }
-  
+
   .hero-left-subheading-div {
     background-color: #000;
     border-radius: 30px;
