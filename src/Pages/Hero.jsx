@@ -26,12 +26,12 @@ export default function Hero() {
         className="hero-star3 w-fit"
         alt=""
       />
-      <div className="hero-left w-2/5 flex flex-col gap-4 justify-center md:w-11/12">
+      <div className="hero-left w-2/5 flex flex-col gap-4 justify-center md:w-4/5">
         <p className="hero-left-heading">Soli</p>
         <div className="hero-left-subheading-div w-fit px-8 md:py-2 flex items-center justify-center">
           <p className="hero-left-subheading-text">$SOLI</p>
         </div>
-        <p className="hero-left-description w-3/4">
+        <p className="hero-left-description w-3/4 md:w-11/12">
           Get ready to ride the wave of fun, pleasure, and profits with SOLI,
           the latest memecoin sensation on Solana!{" "}
         </p>
