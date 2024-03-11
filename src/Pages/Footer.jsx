@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="flex w-full justify-between">
         <div className="flex items-center justify-center w-1/4 md:hidden">
           <img
-            src="public/assets/footerimg.png"
+            src="./assets/footerimg.png"
             alt=""
             className="w-3/5"
           />
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
         </ul>
         <div className="md:flex items-center justify-start hidden w-full">
-          <img src="public/assets/footerimg.png" alt="" className="w-1/2" />
+          <img src="./assets/footerimg.png" alt="" className="w-1/2" />
         </div>
         <p className="footer-copyright hidden md:block">
           Copyright ©2024 Soli. All rights reserved.
