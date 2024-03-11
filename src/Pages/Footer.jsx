@@ -12,8 +12,23 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex flex-col justify-between items-center w-full py-8"
+      className="flex flex-col justify-between items-center w-full py-8 relative"
     >
+      <img
+        src="./assets/Designs/footerstar1.png"
+        alt=""
+        className="footer-star1"
+      />{" "}
+      <img
+        src="./assets/Designs/footerstar2.png"
+        alt=""
+        className="footer-star2"
+      />
+      <img
+        src="./assets/Designs/footerstar1phone.png"
+        alt=""
+        className="footer-star1phone"
+      />
       <div className="flex w-full justify-between">
         <div className="flex items-center justify-center w-1/4 md:hidden">
           <img
@@ -32,7 +47,6 @@ export default function Footer() {
           />
         </div>
       </div>
-
       <div className="w-full md:w-11/12 flex justify-between md:flex-col px-8 md:gap-4 md:px-2">
         <p className="footer-copyright md:hidden">
           Copyright ©2024 Soli. All rights reserved.

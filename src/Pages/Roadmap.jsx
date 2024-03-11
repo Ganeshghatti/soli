@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Roadmap() {
   return (
-    <section id="Roadmap" className="flex items-center justify-center py-16 relative">
+    <section
+      id="Roadmap"
+      className="flex items-center justify-center py-24 relative"
+    >
       {" "}
       <img
         src="./assets/Designs/roadmapstar1.png"
@@ -26,10 +29,10 @@ export default function Roadmap() {
           milestones, the SOLI roadmap is not just a path but a rollercoaster
           ride through the cosmos of camaraderie and mirth. Picture this: a
           constellation where each star is a giggle, every nebula a burst of
-          creativity, and planets are milestones of communal triumphs. Our
-          mission? To weave a tapestry of moments that sparkle with humor,
-          unity, and the kind of fun that echoes in the infinite digital
-          universe.
+          creativity, and planets are milestones of communal triumphs.
+          <br className="hidden md:block" /> Our mission? To weave a tapestry of
+          moments that sparkle with humor, unity, and the kind of fun that
+          echoes in the infinite digital universe.
         </p>
         <div className="flex justify-between flex-wrap gap-y-12 mt-6">
           <div className="roadmap-card">
