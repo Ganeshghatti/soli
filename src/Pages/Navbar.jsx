@@ -6,7 +6,14 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
 export default function Navbar() {
   const [menu, setmenu] = useState(false);
+  const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
 
+  const handleClick = () => {
+    setButtonPosition({
+      top: buttonPosition.top + 10,
+      left: buttonPosition.left + 20,
+    });
+  };
   const menuf = () => {
     setmenu(!menu);
   };
@@ -120,7 +127,16 @@ export default function Navbar() {
                   </svg>
                 </a>
               </div>
-              <img src="./assets/navbarbutton.png" alt="click here" />
+              <a href="https://www.google.com/" onClick={handleClick}>
+                <img
+                  src="./assets/navbarbutton.png"
+                  alt="click here"
+                  style={{
+                    marginTop: `${buttonPosition.top}px`,
+                    marginLeft: `${buttonPosition.left}px`,
+                  }}
+                />
+              </a>
             </div>
           </ul>
         </>
@@ -178,11 +194,17 @@ export default function Navbar() {
             </svg>
           </a>
         </div>
-        <img
-          src="./assets/navbarbutton.png"
-          className="cursor-pointer"
-          alt="click here"
-        />
+        <a href="https://www.google.com/" onClick={handleClick}>
+          <img
+            src="./assets/navbarbutton.png"
+            className="cursor-pointer"
+            alt="click here"
+            style={{
+              marginTop: `${buttonPosition.top}px`,
+              marginLeft: `${buttonPosition.left}px`,
+            }}
+          />
+        </a>
       </div>
     </nav>
   );

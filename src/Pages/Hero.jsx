@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Hero() {
+  const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
+
+  const handleClick = () => {
+    setButtonPosition({
+      top: buttonPosition.top + 10, 
+      left: buttonPosition.left + 10, 
+    });
+  };
   return (
     <section
       id="hero"
@@ -60,16 +68,24 @@ export default function Hero() {
           Get ready to ride the wave of fun, pleasure, and profits with SOLI,
           the latest memecoin sensation on Solana!{" "}
         </p>
-        <img
-          src="./assets/Herobutton.png"
-          className="w-fit cursor-pointer md:hidden"
-          alt="buy now"
-        />
-        <img
-          src="./assets/Herobuttonphone.png"
-          className="w-fit cursor-pointer hidden md:block"
-          alt="buy now"
-        />
+        <a href="https://www.google.com/" onClick={handleClick}>
+          <img
+            src="./assets/Herobutton.png"
+            className="w-fit cursor-pointer md:hidden"
+            alt="buy now"
+            style={{
+              marginTop: `${buttonPosition.top}px`,
+              marginLeft: `${buttonPosition.left}px`,
+            }}
+          />
+        </a>
+        <a href="https://www.google.com/">
+          <img
+            src="./assets/Herobuttonphone.png"
+            className="w-fit cursor-pointer hidden md:block"
+            alt="buy now"
+          />
+        </a>
       </div>
       <img
         src="./assets/Heroimg.png"
