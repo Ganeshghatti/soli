@@ -40,7 +40,7 @@ export default function Footer() {
         <p className="footer-title hidden md:block">
           Join us in this adventure
         </p>
-        <ul className="flex gap-2 md:gap-4 w-1/2 justify-between footer-menuoptions md:flex-col">
+        <ul className="flex gap-2 md:gap-4 w-1/2 md:w-full justify-between footer-menuoptions md:flex-col">
           <li>
             <a href="/#Tokenomics">Tokenomics</a>
           </li>
@@ -89,7 +89,7 @@ export default function Footer() {
             </a>
           </div>
         </ul>
-        <div className="flex items-center justify-start w-full">
+        <div className="md:flex items-center justify-start hidden w-full">
           <img src="public/assets/footerimg.png" alt="" className="w-1/2" />
         </div>
         <p className="footer-copyright hidden md:block">
