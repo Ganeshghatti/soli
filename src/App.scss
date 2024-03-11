@@ -172,6 +172,7 @@
     @media (max-width: 867px) {
       -webkit-text-stroke-width: 5;
       font-size: 40px;
+      @include stroke(5, #fff);
       letter-spacing: 1.6px;
     }
   }
@@ -224,6 +225,7 @@
     @media (max-width: 867px) {
       font-size: 15px;
       letter-spacing: 0.64px;
+      @include stroke(1, #fff);
     }
   }
   .tokenomics-contact-div {
@@ -248,6 +250,7 @@
       font-size: 18px;
       line-height: 31px;
       letter-spacing: 0.18px;
+      @include stroke(1, #fff);
     }
   }
   .tokenomics-contact-id {
@@ -317,6 +320,8 @@
       -webkit-text-stroke-width: 5;
       font-size: 40px;
       letter-spacing: 1.6px;
+      @include stroke(5, #fff);
+      text-align: center;
     }
   }
   .howtobuytext {
@@ -357,7 +362,6 @@
   .roadmap-title {
     color: #000;
     @include stroke(9, #fff);
-
     font-family: light_pixel_7;
     font-size: 70px;
     font-style: normal;
@@ -367,6 +371,7 @@
     @media (max-width: 867px) {
       font-size: 40px;
       letter-spacing: 1.6px;
+      @include stroke(5, #fff);
     }
   }
   .roadmap-description {
@@ -430,5 +435,43 @@
     position: absolute;
     left: 0%;
     top: 65%;
+  }
+}
+#footer {
+  .footer-title {
+    color: #000;
+    @include stroke(10, #fff);
+    font-family: light_pixel_7;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    @media (max-width: 867px) {
+      @include stroke(5, #fff);
+      font-size: 40px;
+      line-height: 62px;
+      letter-spacing: 1.6px;
+    }
+  }
+  .footer-copyright {
+    color: rgba(176, 176, 176, 0.68);
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  .footer-menuoptions {
+    color: #efefef;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
