@@ -18,7 +18,7 @@ export default function Footer() {
         src="./assets/Designs/footerstar1.png"
         alt=""
         className="footer-star1"
-      />{" "}
+      />
       <img
         src="./assets/Designs/footerstar2.png"
         alt=""
@@ -34,7 +34,7 @@ export default function Footer() {
           <img
             src="public/assets/footerimg.png"
             alt=""
-            className="w-3/5 md:w-3/5"
+            className="w-3/5"
           />
         </div>
 
