@@ -65,7 +65,7 @@ export default function Footer() {
             <a href="/#Roadmap">Roadmap</a>
           </li>
           <div className="flex gap-2">
-            <a href="https://x.com/the_smart_ape?t=3EuJKTJsc5ONglv-G-SovQ&s=31">
+            <a href="https://twitter.com/Soli_inu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -86,8 +86,7 @@ export default function Footer() {
                 </defs>
               </svg>
             </a>
-            <a href="https://t.me/smart_ape">
-              {" "}
+            <a href="http://t.me/soli_inu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

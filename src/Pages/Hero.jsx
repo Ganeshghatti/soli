@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 export default function Hero() {
-  const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
+  const [scale, setscale] = useState({ scale: 1 });
 
-  const handleClick = () => {
-    setButtonPosition({
-      top: buttonPosition.top + 10, 
-      left: buttonPosition.left + 10, 
-    });
+  const scalehandleClick = () => {
+    setscale((prevState) => ({
+      scale: 0.9,
+    }));
   };
   return (
     <section
@@ -68,25 +67,25 @@ export default function Hero() {
           Get ready to ride the wave of fun, pleasure, and profits with SOLI,
           the latest memecoin sensation on Solana!{" "}
         </p>
-        <a href="https://www.google.com/" onClick={handleClick}>
+        <a href="https://www.google.com/" onClick={scalehandleClick}>
           <img
             src="./assets/Herobutton.png"
             className="w-fit cursor-pointer md:hidden"
             alt="buy now"
             style={{
-              marginTop: `${buttonPosition.top}px`,
-              marginLeft: `${buttonPosition.left}px`,
+              transform: `scale(${scale.scale})`,
+              transition: "transform 0.3s ease",
             }}
           />
         </a>
-        <a href="https://www.google.com/" onClick={handleClick}>
+        <a href="https://www.google.com/" onClick={scalehandleClick}>
           <img
             src="./assets/Herobuttonphone.png"
             className="w-fit cursor-pointer hidden md:block"
             alt="buy now"
             style={{
-              marginTop: `${buttonPosition.top}px`,
-              marginLeft: `${buttonPosition.left}px`,
+              transform: `scale(${scale.scale})`,
+              transition: "transform 0.3s ease",
             }}
           />
         </a>

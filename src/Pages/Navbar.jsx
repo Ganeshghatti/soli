@@ -6,22 +6,17 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
 export default function Navbar() {
   const [menu, setmenu] = useState(false);
-  const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
+  const [scale, setscale] = useState({ scale: 1 });
 
-  const handleClick = () => {
-    setButtonPosition({
-      top: buttonPosition.top + 10,
-      left: buttonPosition.left + 20,
-    });
+  const scalehandleClick = () => {
+    setscale((prevState) => ({
+      scale: 0.9,
+    }));
   };
   const menuf = () => {
     setmenu(!menu);
   };
 
-  const mobilenavf = (link) => {
-    navigate(`/${link}`);
-    setmenu(!menu);
-  };
   return (
     <nav
       id="navbar"
@@ -89,7 +84,7 @@ export default function Navbar() {
                 Roadmap
               </a>
             </li>
-            <div className="flex gap-12 items-center  flex-col">
+            <div className="flex gap-12 items-center flex-col">
               <div className="flex gap-6">
                 <a href="https://x.com/the_smart_ape?t=3EuJKTJsc5ONglv-G-SovQ&s=31">
                   <svg
@@ -127,13 +122,13 @@ export default function Navbar() {
                   </svg>
                 </a>
               </div>
-              <a href="https://www.google.com/" onClick={handleClick}>
+              <a href="https://www.google.com/" onClick={scalehandleClick}>
                 <img
                   src="./assets/navbarbutton.png"
                   alt="click here"
                   style={{
-                    marginTop: `${buttonPosition.top}px`,
-                    marginLeft: `${buttonPosition.left}px`,
+                    transform: `scale(${scale.scale})`,
+                    transition: "transform 0.3s ease",
                   }}
                 />
               </a>
@@ -158,7 +153,7 @@ export default function Navbar() {
       </ul>
       <div className="flex gap-12 items-center md:hidden">
         <div className="flex gap-6">
-          <a href="https://x.com/the_smart_ape?t=3EuJKTJsc5ONglv-G-SovQ&s=31">
+          <a href="https://twitter.com/Soli_inu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -179,7 +174,7 @@ export default function Navbar() {
               </defs>
             </svg>
           </a>
-          <a href="https://t.me/smart_ape">
+          <a href="http://t.me/soli_inu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -194,14 +189,14 @@ export default function Navbar() {
             </svg>
           </a>
         </div>
-        <a href="https://www.google.com/" onClick={handleClick}>
+        <a href="https://www.google.com/" onClick={scalehandleClick}>
           <img
             src="./assets/navbarbutton.png"
             className="cursor-pointer"
             alt="click here"
             style={{
-              marginTop: `${buttonPosition.top}px`,
-              marginLeft: `${buttonPosition.left}px`,
+              transform: `scale(${scale.scale})`,
+              transition: "transform 0.3s ease",
             }}
           />
         </a>
