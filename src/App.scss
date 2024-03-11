@@ -438,6 +438,9 @@
   }
 }
 #footer {
+  background-image: url("../public/assets/footerbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   .footer-title {
     color: #000;
     @include stroke(10, #fff);
